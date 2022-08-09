@@ -14,7 +14,7 @@ function Contact() {
   const form = useRef();
   
   const sendEmail = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     console.log(e)
     emailjs.sendForm('service_168', 'template_kg6mcyh', e.target, 'wVd7qeRnxmh1-uthW')
       .then((result) => {
@@ -25,6 +25,7 @@ function Contact() {
       e.target.reset();
     
   };
+  handleSubmit(sendEmail);
   return (
     <div className={cx('contact')}>
       <Title label="Contact" title="Get in Touch" />
@@ -33,7 +34,7 @@ function Contact() {
 
         </div>
         <div className={cx('fields')}>
-          <form ref={form} className={cx('contact_form')} onSubmit={handleSubmit(sendEmail)}>
+          <form ref={form} className={cx('contact_form')} onSubmit={sendEmail}>
             <div className={cx('first')}>
               <ul>
                 <li>
@@ -42,12 +43,7 @@ function Contact() {
                   name="name" 
                   type="text" 
                   placeholder="Name" />
-                  {Object.keys(errors).length > 0 ??
-                    errors.name?.type === 'required' ? 
-                      <span>Name is required</span> :
-                      <span></span>
-                    
-                  }
+                  
                 </li>
                 <li>
                   <input 
@@ -59,27 +55,26 @@ function Contact() {
                   name="email" 
                   type="email" 
                   placeholder="Email" />
-                  {Object.keys(errors).length !== 0 ??
-                    errors.email?.type === 'required' ? 
-                      <span>Email is required</span>
-                     : errors.email?.type === 'pattern' ? 
-                      <span>Invalid Email Address</span>
-                     : <span></span>                   
-                  }
+                  
                 </li>
                 <li>
                   <textarea 
                   {...register('message',{required : true})}
                   name="message" 
                   placeholder="Message"></textarea>
-                  {Object.keys(errors).length > 0 ??
-                    errors.message?.type === 'required' ? 
-                      <span>Message is required</span> :
-                      <span></span>
-                    
-                  }
+                  
                 </li>
               </ul>
+            </div>
+            <div>
+              {Object.keys(errors).length !== 0 &&
+                <ul>
+                  {errors.name?.type === 'required' && <li>Name is required</li>}
+                  {errors.email?.type === 'required' && <li>Email is required</li>}
+                  {errors.message?.type === 'required' && <li>Message is required</li>}
+                  {errors.email?.type === 'pattern' && <span>Invalid Email Address</span>}
+                </ul>                 
+              }
             </div>
             <Button label="Send Message" type="submit" />
           </form>

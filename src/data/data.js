@@ -1,0 +1,40 @@
+export const projects = [
+    {
+        id:1,
+        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/5.jpg',
+        title:'Portfolio',
+        name:'vimeo'
+    },
+    {
+        id:1,
+        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/2.jpg',
+        title:'Portfolio',
+        name:'vimeo'
+    },
+    {
+        id:1,
+        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/3.jpg',
+        title:'Portfolio',
+        name:'vimeo'
+    },
+    {
+        id:1,
+        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/4.jpg',
+        title:'Portfolio',
+        name:'vimeo'
+    },
+    {
+        id:1,
+        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/5.jpg',
+        title:'Portfolio',
+        name:'vimeo'
+    },
+    {
+        id:1,
+        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/6.jpg',
+        title:'Portfolio',
+        name:'vimeo'
+    },
+];
+
+export default {projects}

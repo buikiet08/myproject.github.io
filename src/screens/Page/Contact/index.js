@@ -16,13 +16,13 @@ function Contact() {
   const sendEmail = (e) => {
     // e.preventDefault();
     console.log(e)
-      // emailjs.sendForm('service_168', 'template_kg6mcyh', e.target, 'wVd7qeRnxmh1-uthW')
-      //   .then((result) => {
-      //       console.log(result.text);
-      //   }, (error) => {
-      //       console.log(error.text);
-      //   });
-      //   e.target.reset();
+    emailjs.sendForm('service_168', 'template_kg6mcyh', e.target, 'wVd7qeRnxmh1-uthW')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
     
   };
   return (

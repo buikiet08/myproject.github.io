@@ -1,0 +1,101 @@
+.skill{
+    padding: 100px 0 50px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .wrapper{
+        margin-top: 62px;
+        .my-skill{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-gap: 30px;
+            .skill-item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .skill-image{
+                    .skill-image-link{
+                        width: auto;
+                        height: 152px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        .experience{
+            margin-top: 62px;
+            .experience-title{
+                font-weight: 800;
+                font-family: "Montserrat";
+                color: var(--black-2);
+                font-size: 26px;
+            }
+            .experience-wrapper{
+                padding-top: 40px;
+                .experience-item{
+                    display: flex;
+                    justify-content: flex-start;
+                    .experience-Work{
+                        width: 100%;
+                        max-width: 300px;
+                        .work-name{
+                            font-weight: 700;
+                            font-family: "Montserrat";
+                            color: var(--black-2);
+                            font-size: 20px;
+                            margin-bottom: 20px;
+                        }
+                        .work-time{
+                            padding: 8px;
+                            background-color: var(--black-2);
+                            color: var(--white);
+                            
+                        }
+                    }
+                    .experience-company{
+                        position: relative;
+                        padding-left: 40px;
+                        padding-bottom: 20px;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 2px;
+                            height: 100%;
+                            background-color: var(--black-2);
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: -6.5px;
+                            top: 0;
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            background-color: var(--black-2);
+                        }
+                        .company-name{
+                            font-weight: 600;
+                            font-family: "Montserrat";
+                            color: var(--black-2);
+                            font-size: 20px;
+                            margin-bottom: 20px;
+                        }
+                        .company-content{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

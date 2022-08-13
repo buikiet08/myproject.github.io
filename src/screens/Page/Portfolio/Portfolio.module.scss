@@ -22,4 +22,21 @@
             }
         }
     }
+    .description-prev{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        .prev-icon{
+            margin-right: 10px;
+            color: #767676;
+            font-size: 20px;
+        }
+        span{
+            color: #767676;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 600;
+        }
+    }
 }

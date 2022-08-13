@@ -7,31 +7,31 @@ export const projects = [
         name:'vimeo'
     },
     {
-        id:1,
+        id:2,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/2.jpg',
         title:'Portfolio',
         name:'vimeo'
     },
     {
-        id:1,
+        id:3,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/3.jpg',
         title:'Portfolio',
         name:'vimeo'
     },
     {
-        id:1,
+        id:4,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/4.jpg',
         title:'Portfolio',
         name:'vimeo'
     },
     {
-        id:1,
+        id:5,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/5.jpg',
         title:'Portfolio',
         name:'vimeo'
     },
     {
-        id:1,
+        id:6,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/6.jpg',
         title:'Portfolio',
         name:'vimeo'

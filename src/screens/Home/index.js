@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames/bind'
 import styles from './Home.module.scss'
-import { Routes,Route,Link } from 'react-router-dom'
+import { Routes,Route,NavLink } from 'react-router-dom'
 import { FaHome,FaUser,FaBriefcase,FaGraduationCap,FaEnvelope } from "react-icons/fa";
 
 import HomePage from '../Page/HomePage'
@@ -21,24 +21,34 @@ function Home() {
           <img className={cx('nav-title')} src={'http://tokyo.ibthemespro.com/assets/img/logo/dark.png'} alt={'http://tokyo.ibthemespro.com/assets/img/logo/dark.png'} />
           <ul>
             <li>
-              <FaHome className={cx('icon')} />           
-              <Link className={cx('nav-link')} to='/'>Home</Link>             
+              <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')}  to='/'>
+                <FaHome className={cx('icon')} />           
+                Home
+              </NavLink>             
             </li>
             <li>
-              <FaUser className={cx('icon')} />
-              <Link className={cx('nav-link')} to='/about'>About</Link>
+              <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')} to='/about'>
+                <FaUser className={cx('icon')} />
+                About
+              </NavLink>
             </li>
             <li>
-              <FaGraduationCap className={cx('icon')} />
-              <Link className={cx('nav-link')} to='/skill'>Skills</Link>
+              <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')} to='/skill'>
+                <FaGraduationCap className={cx('icon')} />
+                Skills
+              </NavLink>
             </li>
             <li>
-              <FaBriefcase className={cx('icon')} />
-              <Link className={cx('nav-link')} to='/portfolio'>Portfolio</Link>
+              <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')} to='/portfolio'>
+                <FaBriefcase className={cx('icon')} />
+                Portfolio
+              </NavLink>
             </li>
             <li>
-              <FaEnvelope className={cx('icon')} />
-              <Link className={cx('nav-link')} to='/contact'>Contact</Link>
+              <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')} to='/contact'>
+                <FaEnvelope className={cx('icon')} />
+                Contact
+              </NavLink>
             </li>
           </ul>
           <div className={cx('copyright')}><p>© 2022 Tokyo <br /> Created by<a href="https://www.facebook.com/kiet.tan.754365/" target="_blank" rel="noreferrer"> BuiKiet</a></p></div>

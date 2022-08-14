@@ -9,7 +9,7 @@ import Skill from '../Page/Skill'
 import Portfolio from '../Page/Portfolio'
 import About from '../Page/About'
 import Contact from '../Page/Contact';
-
+import Detail from '../Page/Detail';
 
 const cx = classNames.bind(styles)
 
@@ -58,11 +58,12 @@ function Home() {
         <div className={cx('section')}>
           <div className={cx('main-container')}>
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route exact path="/" element={<HomePage />} />
               <Route path="/about" element={<About />} />
               <Route path="/skill" element={<Skill />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/portfolio/:title" element={<Detail />} />
             </Routes>
           </div>
         </div>

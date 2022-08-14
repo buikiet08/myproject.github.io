@@ -3,37 +3,37 @@ export const projects = [
     {
         id:1,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/5.jpg',
-        title:'Portfolio',
+        title:'Portfolio1',
         name:'vimeo'
     },
     {
         id:2,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/2.jpg',
-        title:'Portfolio',
+        title:'Portfolio2',
         name:'vimeo'
     },
     {
         id:3,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/3.jpg',
-        title:'Portfolio',
+        title:'Portfolio3',
         name:'vimeo'
     },
     {
         id:4,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/4.jpg',
-        title:'Portfolio',
+        title:'Portfolio4',
         name:'vimeo'
     },
     {
         id:5,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/5.jpg',
-        title:'Portfolio',
+        title:'Portfolio5',
         name:'vimeo'
     },
     {
         id:6,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/6.jpg',
-        title:'Portfolio',
+        title:'Portfolio6',
         name:'vimeo'
     },
 ];

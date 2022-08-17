@@ -28,7 +28,7 @@
                 .skill-image{
                     .skill-image-link{
                         width: auto;
-                        height: 144px;
+                        height: 140px;
                         object-fit: contain;
                     }
                 }
@@ -119,6 +119,7 @@
 // reposive
 $res_375 : "only screen and (min-width: 375px) and (max-width: 424px)";
 $res_425 : "only screen and (max-width: 425px)";
+$res_600 : "only screen and (max-width: 600px)";
 $res_768 : "only screen and (max-width: 768px)";
 $res_992 : "only screen and (max-width: 992px)";
 $res_1024 : "only screen and (max-width: 1024px)";
@@ -133,6 +134,11 @@ $res_1600 : "only screen and (max-width: 1600px)";
 }
 @mixin responsive_425() {
     @media #{$res_425} {
+        @content;
+    }
+}
+@mixin responsive_600() {
+    @media #{$res_600} {
         @content;
     }
 }
@@ -173,7 +179,22 @@ $res_1600 : "only screen and (max-width: 1600px)";
 }
 
 @include responsive_1400{
- 
+    .skill{
+        .wrapper{
+            .my-skill{
+                .skill-item{
+                    .skill-image{
+                        .skill-image-link{
+                            height: 120px;
+                        }
+                    }
+                    .skill-image{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include responsive_1200{
@@ -189,7 +210,24 @@ $res_1600 : "only screen and (max-width: 1600px)";
 }
  
 @include responsive_768{
+    .skill{
+        .wrapper{
+            .my-skill{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
     
+}
+
+@include responsive_600{
+    .skill{
+        .wrapper{
+            .my-skill{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
     
 }
 

@@ -67,35 +67,16 @@
 }
 
 // reposive
-$res_375 : "only screen and (min-width: 375px) and (max-width: 424px)";
-$res_425 : "only screen and (max-width: 425px)";
 $res_768 : "only screen and (max-width: 768px)";
-$res_992 : "only screen and (max-width: 992px)";
 $res_1024 : "only screen and (max-width: 1024px)";
 $res_1200 : "only screen and (max-width: 1200px)";
-$res_1400 : "only screen and (max-width: 1400px)";
-$res_1600 : "only screen and (max-width: 1600px)";
 
-@mixin responsive_375() {
-    @media #{$res_375} {
-        @content;
-    }
-}
-@mixin responsive_425() {
-    @media #{$res_425} {
-        @content;
-    }
-}
 @mixin responsive_768() {
     @media #{$res_768} {
         @content;
     }
 }
-@mixin responsive_992() {
-    @media #{$res_992} {
-        @content;
-    }
-}
+
 @mixin responsive_1024() {
     @media #{$res_1024} {
         @content;
@@ -106,25 +87,7 @@ $res_1600 : "only screen and (max-width: 1600px)";
         @content;
     }
 }
-@mixin responsive_1400() {
-    @media #{$res_1400} {
-        @content;
-    }
-}
-@mixin responsive_1600() {
-    @media #{$res_1600} {
-        @content;
-    }
-}
 
-
-@include responsive_1600{
-    
-}
-
-@include responsive_1400{
- 
-}
 
 @include responsive_1200{
     .about{
@@ -151,9 +114,6 @@ $res_1600 : "only screen and (max-width: 1600px)";
     }
 }
 
-@include responsive_992{
- 
-}
  
 @include responsive_768{
     .about{
@@ -165,10 +125,3 @@ $res_1600 : "only screen and (max-width: 1600px)";
     
 }
 
-@include responsive_425{
-    
-}
-
-@include responsive_375{
-    
-}

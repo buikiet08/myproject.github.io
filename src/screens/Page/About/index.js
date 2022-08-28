@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from 'classnames/bind'
 import styles from './About.module.scss'
+import {NavLink} from 'react-router-dom'
 
 import Button from '../../../component/Button'
 
@@ -16,7 +17,9 @@ function About() {
         <div className={cx('description_inner')}>
           <div className={cx('left')}>
             <p>Hello, I am a creative photographer based in New York and happy to travel all over Europe to capture your big day in candid and authentic photos. I will create a lasting memory of the people.</p>
-            <Button label="Read More" />
+            <NavLink to='/about/about'>
+              <Button label="Read More" />
+            </NavLink>
           </div>
           <div className={cx('right')}>
             <ul>

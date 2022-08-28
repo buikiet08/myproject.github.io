@@ -4,13 +4,13 @@ export const projects = [
         id:1,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/5.jpg',
         title:'Portfolio1',
-        name:'vimeo'
+        name:'Sea Furniture'
     },
     {
         id:2,
         image:'http://tokyo.ibthemespro.com/assets/img/portfolio/2.jpg',
         title:'Portfolio2',
-        name:'vimeo'
+        name:'Sapo'
     },
     {
         id:3,

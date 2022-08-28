@@ -39,3 +39,23 @@
         }
     }
 }
+
+// reposive
+$res_768 : "only screen and (max-width: 768px)";
+
+@mixin responsive_768() {
+    @media #{$res_768} {
+        @content;
+    }
+}
+ 
+@include responsive_768{
+    .detail{
+        .wrapper{
+            .detail-image{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    }
+    
+}

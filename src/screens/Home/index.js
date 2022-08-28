@@ -10,6 +10,7 @@ import Portfolio from '../Page/Portfolio'
 import About from '../Page/About'
 import Contact from '../Page/Contact';
 import Detail from '../Page/Detail';
+import Main from '../Page/Main';
 
 const cx = classNames.bind(styles)
 
@@ -60,6 +61,7 @@ function Home() {
             <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route path="/about" element={<About />} />
+              <Route path="/about/about" element={<Main />} />
               <Route path="/skill" element={<Skill />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/contact" element={<Contact />} />

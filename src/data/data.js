@@ -1,4 +1,4 @@
-import images from "../constains/images";
+import images from '../constains/images'
 export const projects = [
     {
         id:1,

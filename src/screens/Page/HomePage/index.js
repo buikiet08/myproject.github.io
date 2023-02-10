@@ -14,7 +14,7 @@ function HomePage() {
       </div>
 
       <div className={cx('details')}>
-        <h3 className={cx('name')}>Adriano Smith</h3>
+        <h3 className={cx('name')}>Bùi Kiệt</h3>
         <p className={cx('job')}>Creative Photographer based in New York and happy to travel all over Europe to capture photos.</p>
         <ul className={cx('social')}>
           <li>

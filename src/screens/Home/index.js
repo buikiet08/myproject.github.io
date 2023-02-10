@@ -52,7 +52,7 @@ function Home() {
               </NavLink>
             </li>
           </ul>
-          <div className={cx('copyright')}><p>© 2022 Tokyo <br /> Created by<a href="https://www.facebook.com/kiet.tan.754365/" target="_blank" rel="noreferrer"> BuiKiet</a></p></div>
+          <div className={cx('copyright')}><p>© 2023 buikiet <br /> Created by<a href="https://www.facebook.com/kiet.tan.754365/" target="_blank" rel="noreferrer"> BuiKiet</a></p></div>
         </nav>
       </div>
       <div className={cx('main-right')}>

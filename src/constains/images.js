@@ -8,6 +8,10 @@ export const jquery = `${process.env.PUBLIC_URL}/assets/images/jquery.png`;
 export const typescript = `${process.env.PUBLIC_URL}/assets/images/typescript.png`; 
 export const reactjs = `${process.env.PUBLIC_URL}/assets/images/reactjs.png`; 
 export const reactnative = `${process.env.PUBLIC_URL}/assets/images/reactnative.png`; 
+export const p1 = `${process.env.PUBLIC_URL}/assets/images/P1.png`; 
+export const p2 = `${process.env.PUBLIC_URL}/assets/images/P2.png`; 
+export const p3 = `${process.env.PUBLIC_URL}/assets/images/P3.png`; 
+export const p4 = `${process.env.PUBLIC_URL}/assets/images/P4.png`; 
 
 export default {
     html,
@@ -19,6 +23,10 @@ export default {
     jquery,
     typescript,
     reactnative,
-    reactjs
+    reactjs,
+    p1,
+    p2,
+    p3,
+    p4
 }
 

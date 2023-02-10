@@ -13,6 +13,7 @@ function PortfolioItem(props) {
             <h5>{props.title}</h5>
             <span>{props.name}</span>
         </div>
+        <div className={cx('overlay')}></div>
     </Link>
   )
 }

@@ -16,10 +16,12 @@ function Detail() {
                 <div className={cx('wrapper')}>
                     <h3>{item.title}</h3>
                     <div className={cx('detail-image')}>
-                        <img src={item.image} alt={item.title} />
-                        <img src={item.image} alt={item.title} />
-                        <img src={item.image} alt={item.title} />
-                        <img src={item.image} alt={item.title} />
+                        {
+                            item?.imageDetail.map((item,index) => (
+                                <img key={index} src={item} alt={item.title} />
+
+                            ))
+                        }
                     </div>
                     <div className={cx('detail-description')}>
                         <span>-Sed hendrerit. Cras risus ipsum, faucibus ut, ullamcorper id, varius estibulum ante ipsum primis in faucibus .</span>
@@ -35,7 +37,9 @@ function Detail() {
 
                         </ul>
                     </div>
-                    <Button label="View demo" />
+                    <Button label="View demo" onClick={() => {
+                        window.open(item.link)
+                    }} />
                 </div>
             )
         }

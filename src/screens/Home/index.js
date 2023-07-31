@@ -5,12 +5,12 @@ import { Routes,Route,NavLink } from 'react-router-dom'
 import { FaHome,FaUser,FaBriefcase,FaGraduationCap,FaEnvelope } from "react-icons/fa";
 
 import HomePage from '../Page/HomePage'
-import Skill from '../Page/Skill'
-import Portfolio from '../Page/Portfolio'
 import About from '../Page/About'
 import Contact from '../Page/Contact';
 import Detail from '../Page/Detail';
 import Main from '../Page/Main';
+import Experience from '../Page/Experience';
+import Project from '../Page/Project';
 
 const cx = classNames.bind(styles)
 
@@ -34,15 +34,15 @@ function Home() {
               </NavLink>
             </li>
             <li>
-              <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')} to='/skill'>
+              <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')} to='/experience'>
                 <FaGraduationCap className={cx('icon')} />
-                Skills
+                Experience
               </NavLink>
             </li>
             <li>
-              <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')} to='/portfolio'>
+              <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')} to='/project'>
                 <FaBriefcase className={cx('icon')} />
-                Portfolio
+                Project
               </NavLink>
             </li>
             <li>
@@ -62,8 +62,8 @@ function Home() {
               <Route exact path="/" element={<HomePage />} />
               <Route path="/about" element={<About />} />
               <Route path="/about/about" element={<Main />} />
-              <Route path="/skill" element={<Skill />} />
-              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/project" element={<Project />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/portfolio/:title" element={<Detail />} />
             </Routes>

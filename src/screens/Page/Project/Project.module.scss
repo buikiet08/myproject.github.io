@@ -1,5 +1,5 @@
 .portfolio{
-    padding: 100px 0 50px;
+    padding: 60px 0 50px;
     position: relative;
     width: 100%;
     height: auto;
@@ -9,12 +9,12 @@
     flex-direction: column;
     justify-content: flex-start;
     .wrapper{
-        margin-top: 62px;
+        // margin-top: 62px;
         .portfolio_list{
             list-style-type: none;
             display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-gap: 50px;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 40px;
             width: 100%;
             .portfolio_item{
                 float: left;

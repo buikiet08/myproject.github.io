@@ -19,6 +19,8 @@
             margin-bottom:50px;
             img{
                 width: 100%;
+                max-height: 400px;
+                object-fit: contain;
             }
         }
         .detail-technology{
@@ -36,6 +38,11 @@
                     padding: 4px 0;
                 }
             }
+        }
+        .detail-button{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
         }
     }
 }

@@ -1,17 +1,17 @@
 import React from 'react'
 import classNames from 'classnames/bind'
-import styles from './Skill.module.scss'
+import styles from './Experience.module.scss'
 import Title from '../../../component/Title'
 import { skills } from '../../../data/data'
 
 const cx = classNames.bind(styles)
 
-function Skill() {
+function Experience() {
   return (
     <div className={cx('skill')}>
-      <Title label={"Skills"} title={"Top Skill"} />
+      <Title label={"Experience"} title={"Work Experience"} />
       <div className={cx('wrapper')}>
-        <div className={cx('my-skill')}>
+        {/* <div className={cx('my-skill')}>
           {
             skills.map((skill,index) => 
               <div key={index} className={cx('skill-item')}>
@@ -22,34 +22,39 @@ function Skill() {
               </div>
             )
           }
-        </div>
+        </div> */}
         <div className={cx('experience')}>
-          <h3 className={cx('experience-title')}>Work experience</h3>
           <div className={cx('experience-wrapper')}>
-            <div className={cx('experience-item')}>
+            <div className={cx('experience-item')} data-aos="fade-left" 
+            data-aos-duration="700" >
               <div className={cx('experience-Work')}>
                 <div className={cx('work-name')}>Internship</div>
                 <span className={cx('work-time')}>12/2021 - 3/2022</span>
               </div>
               <div className={cx('experience-company')}>
-                <h3 className={cx('company-name')}>Company Name</h3>
+                <h3 className={cx('company-name')}>TMS Holdings</h3>
                 <div className={cx('company-content')}>
-                  <span>- Hỗ trợ viết bài quảng cáo sản phẩm qua kênh facebook, các forum,...</span>
-                  <span>- Giới thiệu, tư vấn sản phẩm, giải đáp các vấn đề thắc mắc của khách hàng qua điện thoại và email.</span>
+                  <span>- Build a complete website as required: figma, pdf, image,...</span>
+                  <span>- Developing features according to customer requirements.</span>
+                  <span>- Tech stack: Html, Css, JavaScript , CMS Nukeviet.</span>
                 </div>
               </div>
             </div>
 
-            <div className={cx('experience-item')}>
+            <div className={cx('experience-item')} data-aos="fade-left" 
+            data-aos-duration="700" >
               <div className={cx('experience-Work')}>
-                <div className={cx('work-name')}>Internship</div>
-                <span className={cx('work-time')}>12/2021 - 3/2022</span>
+                <div className={cx('work-name')}>Front-end Developer</div>
+                <span className={cx('work-time')}>4/2022 - 4/2023</span>
               </div>
               <div className={cx('experience-company')}>
-                <h3 className={cx('company-name')}>Company Name</h3>
+                <h3 className={cx('company-name')}>Cho nha giau company</h3>
                 <div className={cx('company-content')}>
-                  <span>- Hỗ trợ viết bài quảng cáo sản phẩm qua kênh facebook, các forum,...</span>
-                  <span>- Giới thiệu, tư vấn sản phẩm, giải đáp các vấn đề thắc mắc của khách hàng qua điện thoại và email.</span>
+                  <span>- Building app Chonhagiau</span>
+                  <span>- Building warehouse management web - Warehouse
+                    management is a software to manage inventory, revenue
+                    sources, budgets, staff management, sales..</span>
+                  <span>- Tech stack: Reactjs,React Native, Redux</span>
                 </div>
               </div>
             </div>
@@ -60,4 +65,4 @@ function Skill() {
   )
 }
 
-export default Skill
+export default Experience

@@ -1,37 +1,39 @@
 import React from 'react'
 import classNames from 'classnames/bind'
-import { FaFacebookF,FaInstagram,FaGithub,FaTiktok,FaYoutube } from 'react-icons/fa';
+import { FaFacebookF,FaInstagram,FaGithub, FaLinkedin } from 'react-icons/fa';
 import styles from './HomePage.module.scss'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import images from '../../../constains/images';
 const cx = classNames.bind(styles)
 function HomePage() {
+  Aos.init({ duration: 2000 });
   return (
     <div className={cx('container')}>
       <div className={cx('avatar')}>
-        <div className={cx('image')}>
-          <img src={'http://tokyo.ibthemespro.com/assets/img/slider/1.jpg'} alt={'http://tokyo.ibthemespro.com/assets/img/slider/1.jpg'} />
+        <div className={cx('image')} data-aos="fade-right" data-aos-duration="700">
+          <img src={images.avatar} alt={'http://tokyo.ibthemespro.com/assets/img/slider/1.jpg'} />
         </div>
       </div>
 
-      <div className={cx('details')}>
-        <h3 className={cx('name')}>Bùi Kiệt</h3>
-        <p className={cx('job')}>Creative Photographer based in New York and happy to travel all over Europe to capture photos.</p>
+      <div className={cx('details')} data-aos="fade-left" data-aos-duration="700">
+        <p className={cx('user-hello')}>Hi there <g-emoji class="g-emoji" alias="wave" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png">👋</g-emoji></p>
+        <p className={cx('user-name')}><span>I'm </span>Bui Kiet</p>
+        <p className={cx('job')} >I’m a Front-end Developer, love mobile and website .</p>
         <ul className={cx('social')}>
           <li>
             <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FaFacebookF className={cx('icon')} /></a>
           </li>
           <li>
-            <a href="https://twitter.com/" target="_blank" rel="noreferrer"><FaInstagram className={cx('icon')} /></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><FaInstagram className={cx('icon')} /></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><FaGithub className={cx('icon')} /></a>
+            <a href="https://github.com/buikiet08" target="_blank" rel="noreferrer"><FaGithub className={cx('icon')} /></a>
           </li>
           <li>
-            <a href="https://dribbble.com/" target="_blank" rel="noreferrer"><FaTiktok className={cx('icon')} /></a>
+            <a href="https://dribbble.com/" target="_blank" rel="noreferrer"><FaLinkedin className={cx('icon')} /></a>
           </li>
-          <li>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer"><FaYoutube className={cx('icon')} /></a>
-          </li>
+          
         </ul>
       </div>
     </div>

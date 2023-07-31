@@ -6,7 +6,7 @@ const cx = classNames.bind(styles)
 function Button(props) {
   return (
     <div className={cx('description-button')}>
-        <button type={props.type} className={cx('ib-button')} onClick={props.onClick}>{props.label}</button>
+        <button  className={cx('ib-button')} type={props.type} onClick={props.onClick}>{props.label}</button>
     </div>
   )
 }

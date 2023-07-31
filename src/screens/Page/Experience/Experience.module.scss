@@ -1,5 +1,5 @@
 .skill{
-    padding: 100px 0 50px;
+    padding: 60px 0 50px;
     position: relative;
     width: 100%;
     height: auto;
@@ -9,42 +9,42 @@
     flex-direction: column;
     justify-content: flex-start;
     .wrapper{
-        margin-top: 62px;
-        .my-skill{
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-gap: 40px;
-            .skill-item{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-                transition: all 0.2s linear;
-                padding-bottom: 10px;
-                &:hover{
-                    box-shadow: 2px 2px 10px rgb(0 0 0 / 8%);
-                }
-                .skill-image{
-                    .skill-image-link{
-                        width: auto;
-                        height: 140px;
-                        object-fit: contain;
-                    }
-                }
+        // margin-top: 62px;
+        // .my-skill{
+        //     display: grid;
+        //     grid-template-columns: repeat(5,1fr);
+        //     grid-gap: 40px;
+        //     .skill-item{
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: center;
+        //         align-items: center;
+        //         overflow: hidden;
+        //         transition: all 0.2s linear;
+        //         padding-bottom: 10px;
+        //         &:hover{
+        //             box-shadow: 2px 2px 10px rgb(0 0 0 / 8%);
+        //         }
+        //         .skill-image{
+        //             .skill-image-link{
+        //                 width: auto;
+        //                 height: 140px;
+        //                 object-fit: contain;
+        //             }
+        //         }
                 
-                .skill-name{
-                    font-weight: 600;
-                    font-size: 18px;
-                    transition: all 0.3s linear;
-                }
-                &:hover .skill-name{
-                    letter-spacing: 1px;
-                }
-            }
-        }
+        //         .skill-name{
+        //             font-weight: 600;
+        //             font-size: 18px;
+        //             transition: all 0.3s linear;
+        //         }
+        //         &:hover .skill-name{
+        //             letter-spacing: 1px;
+        //         }
+        //     }
+        // }
         .experience{
-            margin-top: 92px;
+            // margin-top: 92px;
             .experience-title{
                 font-weight: 800;
                 font-family: "Montserrat";

@@ -3,68 +3,70 @@ export const projects = [
     {
         id:1,
         image:images.p2,
-        imageDetail:[
-            images.p2,
-            images.p1,
-            images.p3,
-            images.p4
-        ],
-        title:'Phần mềm quản lý bán hàng (cngshop.vn)',
+        title:'Warehouse manager',
         name:'React JS',
         link:'http://cngshop.vn',
+        github:false,
+        tech:'React JS, Laravel, SQL, Redux, Tailwind Css, Ant Design',
+        time: '8/2022 - 3/2023'
     },
     {
         id:2,
-        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/2.jpg',
-        imageDetail:[],
-        title:'Portfolio2',
-        name:'Sapo'
+        image:images.pj2_1,
+        title:'Cho nha giau app',
+        name:'React Native',
+        link:'https://play.google.com/store/apps/details?id=chonhagiauapp.com&hl=en-VN',
+        github:false,
+        tech:'React Native, TypeScript',
+        time: '8/2022 - 3/2023'
     },
     {
-        id:3,
-        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/3.jpg',
-        imageDetail:[],
-        title:'Portfolio3',
-        name:'vimeo'
+        id:13,
+        image:images.p5_1,
+        title:'9soul Branding',
+        name:'CMS NukeViet',
+        link:'https://branding.9soul.vn/',
+        github:false,
+        tech:'HTML, CSS, JQUERY, PHP',
+        time: '1/8/2023 - 14/8/2023'
+    },
+    {
+        id:10,
+        image:images.p2_1,
+        title:'Manager Staff',
+        name:'React JS, NodeJS,...',
+        link:'https://manager-staff.vercel.app',
+        github:'https://github.com/buikiet08/reactjs-manager',
+        tech:'React JS, NodeJS, SQL, Redux, Tailwind Css, Ant Design',
+        time: '1/8/2023 - 14/8/2023'
+    },
+    {
+        id:11,
+        image:images.p3_1,
+        title:'Cource sale',
+        name:'React JS',
+        link:'https://manager-staff.vercel.app',
+        github:'https://github.com/buikiet08/shopper-react',
+        tech:'React JS, Redux, Tailwind Css, Ant Design',
+        time: '1/8/2023 - 14/8/2023'
     },
     {
         id:4,
-        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/4.jpg',
-        imageDetail:[],
-        title:'Portfolio4',
-        name:'vimeo'
-    },
-    {
-        id:5,
-        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/5.jpg',
-        imageDetail:[],
-        title:'Portfolio5',
-        name:'vimeo'
-    },
-    {
-        id:6,
-        image:'http://tokyo.ibthemespro.com/assets/img/portfolio/6.jpg',
-        imageDetail:[],
-        title:'Portfolio6',
-        name:'vimeo'
+        image:images.p4_1,
+        title:'Shopping cart',
+        name:'React JS',
+        link:'https://manager-staff.vercel.app',
+        github:'https://github.com/buikiet08/course-react',
+        tech:'React JS, Redux, Tailwind Css, Ant Design',
+        time: '1/8/2023 - 14/8/2023'
     },
 ];
 
 export const skills = [
     {
         id:1,
-        image:images.html,
-        name:'Html 5'
-    },
-    {
-        id:2,
-        image:images.css,
-        name:'Css 3'
-    },
-    {
-        id:3,
-        image:images.js,
-        name:'Javascript'
+        image:images.htmlCssJs,
+        name:'HTML, CSS, JAVASCRIPT'
     },
     {
         id:4,

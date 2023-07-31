@@ -21,35 +21,27 @@
         height: auto;
         clear: both;
         .name{
+            display: flex;
+            align-items: center;
             font-weight: 700;
             font-size: 22px;
             margin-bottom: 26px;
             color: var(--black-2);
+            .icon{
+                margin-right: 10px;
+            }
         }
         .description_inner{
             width: 100%;
             display: -webkit-flex;
-            display: flex;
             -webkit-justify-content: space-between;
+            flex-wrap: wrap;
             justify-content: space-between;
-            .left{
-                width: 55%;
-                padding-right: 50px;
-                & p{
-                    margin-bottom: 35px;
-                    font-style: italic;
-                    font-size: 15px;
-                    letter-spacing: 0.5px;
-                    font-weight: 500;
-                    line-height: 28px;
-                    color: var(--gray);
-                }
-            }
             .right{
-                width: 45%;
-                padding-left: 50px;
+                width: 50%;
+                margin-bottom: 40px;
                 ul li{
-                    margin: 0;
+                    margin: 4px;
                     width: 100%;
                     float: left;
                     p{

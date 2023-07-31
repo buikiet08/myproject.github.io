@@ -25,6 +25,11 @@
             .nav-title{
                 width: auto;
                 float: left;
+                color: #222;
+                letter-spacing: 2.2px;
+                font-size: 28px;
+                text-wrap: nowrap;
+                user-select: none;
             }
             ul{
                 padding: 40px 0 50px;
@@ -32,6 +37,7 @@
                 float: left;
                li{            
                 width: 100%;
+                user-select: none;
                 float: left;
                 cursor: pointer;
                 margin: 0 0 10px;
@@ -89,6 +95,7 @@
             .copyright{
                 width: 100%;
                 float: left;
+                user-select: none;
                 p{
                     font-size: 15px;
                     color: #999;

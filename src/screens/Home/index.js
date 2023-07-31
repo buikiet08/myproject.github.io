@@ -7,7 +7,6 @@ import { FaHome,FaUser,FaBriefcase,FaGraduationCap,FaEnvelope } from "react-icon
 import HomePage from '../Page/HomePage'
 import About from '../Page/About'
 import Contact from '../Page/Contact';
-import Detail from '../Page/Detail';
 import Main from '../Page/Main';
 import Experience from '../Page/Experience';
 import Project from '../Page/Project';
@@ -19,7 +18,8 @@ function Home() {
     <div className={cx('container')}>
       <div className={cx('main-left')}>
         <nav className={cx('nav')}>
-          <img className={cx('nav-title')} src={'http://tokyo.ibthemespro.com/assets/img/logo/dark.png'} alt={'http://tokyo.ibthemespro.com/assets/img/logo/dark.png'} />
+          <h1 className={cx('nav-title')} >Portfolio</h1>
+          {/* <img className={cx('nav-title')} src={'http://tokyo.ibthemespro.com/assets/img/logo/dark.png'} alt={'http://tokyo.ibthemespro.com/assets/img/logo/dark.png'} /> */}
           <ul>
             <li>
               <NavLink className={({ isActive }) => cx(isActive ? 'active' : 'nav-link')}  to='/'>
@@ -65,7 +65,6 @@ function Home() {
               <Route path="/experience" element={<Experience />} />
               <Route path="/project" element={<Project />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/portfolio/:title" element={<Detail />} />
             </Routes>
           </div>
         </div>

@@ -75,7 +75,7 @@ function About() {
                 <p>Typescript</p>
               </li>
               <li>
-                <p>NodeJS, NextJS</p>
+                <p>NodeJS</p>
               </li>
               <li>
                 <p>MySql</p>

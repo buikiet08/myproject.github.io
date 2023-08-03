@@ -22,7 +22,7 @@ function HomePage() {
         <p className={cx('job')} >I’m a Front-end Developer, love mobile and website .</p>
         <ul className={cx('social')}>
           <li>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FaFacebookF className={cx('icon')} /></a>
+            <a href="https://www.facebook.com/kiet.tan.754365" target="_blank" rel="noreferrer"><FaFacebookF className={cx('icon')} /></a>
           </li>
           <li>
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><FaInstagram className={cx('icon')} /></a>
@@ -31,7 +31,7 @@ function HomePage() {
             <a href="https://github.com/buikiet08" target="_blank" rel="noreferrer"><FaGithub className={cx('icon')} /></a>
           </li>
           <li>
-            <a href="https://dribbble.com/" target="_blank" rel="noreferrer"><FaLinkedin className={cx('icon')} /></a>
+            <a href="https://www.linkedin.com/in/b%C3%B9i-ki%E1%BB%87t-928926272" target="_blank" rel="noreferrer"><FaLinkedin className={cx('icon')} /></a>
           </li>
           
         </ul>

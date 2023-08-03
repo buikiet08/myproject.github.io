@@ -2,7 +2,6 @@ import React from 'react'
 import classNames from 'classnames/bind'
 import styles from './Experience.module.scss'
 import Title from '../../../component/Title'
-import { skills } from '../../../data/data'
 
 const cx = classNames.bind(styles)
 
@@ -45,16 +44,16 @@ function Experience() {
             data-aos-duration="700" >
               <div className={cx('experience-Work')}>
                 <div className={cx('work-name')}>Front-end Developer</div>
-                <span className={cx('work-time')}>4/2022 - 4/2023</span>
+                <span className={cx('work-time')}>4/2022 - 6/2023</span>
               </div>
               <div className={cx('experience-company')}>
-                <h3 className={cx('company-name')}>Cho nha giau company</h3>
+                <h3 className={cx('company-name')}>ChoNhaGiau Electronics Trading Joint Stock Company</h3>
                 <div className={cx('company-content')}>
                   <span>- Building app Chonhagiau</span>
                   <span>- Building warehouse management web - Warehouse
                     management is a software to manage inventory, revenue
                     sources, budgets, staff management, sales..</span>
-                  <span>- Tech stack: Reactjs,React Native, Redux</span>
+                  <span>- Tech stack: Reactjs,React Native,TypeScript, Redux</span>
                 </div>
               </div>
             </div>

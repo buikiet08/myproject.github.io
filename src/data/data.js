@@ -45,7 +45,7 @@ export const projects = [
         image:images.p3_1,
         title:'Cource sale',
         name:'React JS',
-        link:'https://manager-staff.vercel.app',
+        link:'https://course-react.vercel.app/',
         github:'https://github.com/buikiet08/shopper-react',
         tech:'React JS, Redux, Tailwind Css, Ant Design',
         time: '1/8/2023 - 14/8/2023'
@@ -55,7 +55,7 @@ export const projects = [
         image:images.p4_1,
         title:'Shopping cart',
         name:'React JS',
-        link:'https://manager-staff.vercel.app',
+        link:'https://shopper-react.vercel.app/',
         github:'https://github.com/buikiet08/course-react',
         tech:'React JS, Redux, Tailwind Css, Ant Design',
         time: '1/8/2023 - 14/8/2023'

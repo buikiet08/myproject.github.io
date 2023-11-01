@@ -30,6 +30,15 @@ export const p3_4 = `${process.env.PUBLIC_URL}/assets/images/cource4.png`;
 export const p4_1 = `${process.env.PUBLIC_URL}/assets/images/shopping.png`; 
 export const p5_1 = `${process.env.PUBLIC_URL}/assets/images/9soul.png`; 
 
+export const okela = `${process.env.PUBLIC_URL}/assets/images/okela.jpg`; 
+export const tuyhung = `${process.env.PUBLIC_URL}/assets/images/tuyhung.jpg`; 
+export const vbp = `${process.env.PUBLIC_URL}/assets/images/vbp.jpg`; 
+export const car = `${process.env.PUBLIC_URL}/assets/images/car.jpg`; 
+export const cafe = `${process.env.PUBLIC_URL}/assets/images/cafe.jpg`; 
+
+
+
+
 
 
 
@@ -64,6 +73,11 @@ export default {
     p3_3,
     p3_4,
     p4_1,
-    p5_1
+    p5_1,
+    okela,
+    tuyhung,
+    vbp,
+    car,
+    cafe
 }
 

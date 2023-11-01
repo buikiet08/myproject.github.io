@@ -24,8 +24,8 @@ function Experience() {
         </div> */}
         <div className={cx('experience')}>
           <div className={cx('experience-wrapper')}>
-            <div className={cx('experience-item')} data-aos="fade-left" 
-            data-aos-duration="700" >
+            {/* <div className={cx('experience-item')} data-aos="fade-left"
+              data-aos-duration="700" >
               <div className={cx('experience-Work')}>
                 <div className={cx('work-name')}>Internship</div>
                 <span className={cx('work-time')}>12/2021 - 3/2022</span>
@@ -38,13 +38,13 @@ function Experience() {
                   <span>- Tech stack: Html, Css, JavaScript , CMS Nukeviet.</span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className={cx('experience-item')} data-aos="fade-left" 
-            data-aos-duration="700" >
+            <div className={cx('experience-item')} data-aos="fade-left"
+              data-aos-duration="700" >
               <div className={cx('experience-Work')}>
                 <div className={cx('work-name')}>Front-end Developer</div>
-                <span className={cx('work-time')}>4/2022 - 6/2023</span>
+                <span className={cx('work-time')}>4/2022 - 4/2023</span>
               </div>
               <div className={cx('experience-company')}>
                 <h3 className={cx('company-name')}>ChoNhaGiau Electronics Trading Joint Stock Company</h3>
@@ -54,6 +54,26 @@ function Experience() {
                     management is a software to manage inventory, revenue
                     sources, budgets, staff management, sales..</span>
                   <span>- Tech stack: Reactjs,React Native,TypeScript, Redux</span>
+                </div>
+              </div>
+            </div>
+
+            <div className={cx('experience-item')} data-aos="fade-left"
+              data-aos-duration="700" >
+              <div className={cx('experience-Work')}>
+                <div className={cx('work-name')}>Front-end Developer</div>
+                <span className={cx('work-time')}>5/2022 - present</span>
+              </div>
+              <div className={cx('experience-company')}>
+                <h3 className={cx('company-name')}>Digibird Joint Stock Company</h3>
+                <div className={cx('company-content')}>
+                  <span>- Building Zalo mini app</span>
+                  <span>- Tech stack:ReactJs, Recoil ,TypeScript</span>
+                  <span>- OkelaTravel (mini app travel)</span>
+                  <span>- Tùy Hứng Business (mini app travel)</span>
+                  <span>- VBP Hotel (mini app booking hotel)</span>
+                  <span>- Digibird Car (mini app demo)</span>
+                  <span>- Digibird Cafe (mini app demo)</span>
                 </div>
               </div>
             </div>
